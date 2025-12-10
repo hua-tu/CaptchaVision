@@ -12,6 +12,12 @@ from connect import connect_nearby_elements
 def create_app():
     app = Flask(__name__)
 
+    # 添加一个 HEAD 方法专用的存活检测接口
+    @app.route("/online", methods=["HEAD"])
+    def online_head():
+        return "", 200
+
+
     @app.route("/health", methods=["GET"])
     def health():
         return jsonify({"status": "ok"})
