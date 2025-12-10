@@ -1,0 +1,7 @@
+.venv
+img/
+.idea
+.DS_Store
+other
+out
+*.pyc

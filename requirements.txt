@@ -1,0 +1,9 @@
+opencv-python-headless
+gunicorn
+gevent
+flask
+requests
+numpy
+pillow
+google-genai
+python-dotenv
